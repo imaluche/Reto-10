@@ -85,11 +85,33 @@ if __name__ == "__main__":
 - Para que i avance se le suma 1 por cada iteracion
 - Al salir del bucle tendremos como resultado el producto punto, los imprimos de manera que sea entendible
 -----------------------------------
-### 1. Desarrollar un algoritmo que calcule el promedio de un arreglo de reales.
-
+### 3. Hacer un algoritmo que deje al final de un arreglo de números todos los ceros que aparezcan en dicho arreglo.
 ```python
-
+from Reto10_1 import adicionlista
+#Importamos la funcion de Reto10_1
+if __name__ == "__main__":
+    p:list=[]
+    #Declaramos la lista en la cual se realizara el ejercicio
+    adicionlista(p,False)
+    #Aplicamos la funcion para añadir elementos a la lista
+    for i in p:
+        #aplicamos un ciclo for para recorrer la lista
+        if i/10==i//10:
+            #si la division del valor es igual a su divisor exacta podermos decir que es multiplo entero de 10 y por tanto tiene un 0 al final
+            p.pop(p.index(i)) 
+            #En caso de entrar en la condicional se eliminara el valor de la lista
+            p.append(i)
+            #y se reañadira al final de la lista
+    print(p)
+    #se imprime la lista con los valores reorganizados
 ```
 #### explicacion:
--
+- Importamos la funcion del punto 1 del reto 10
+- Dentro del codigo declaramos una lista, esta sera en la cual realizaremos el ejercicio
+- Aplicamos la funcion en la lista para añadir valores
+- Aplicamos un ciclo for para recorrer los datos de la lista
+- Dentro del ciclo for aplicamos un condicional if el cual evaluara la igualdad de la division normal y exacta del valor entre 10, esto nos servira para comprobar que el numero tiene un 0 al final.
+- En caso de que no sea igual el valor pasara, en caso contrario se quitara el valor de la lista con un pop
+- Para despues reañadirlo con un .append, de esta forma aparecera al final de la lista
+- Finalizado el proceso se reimprimira la lista reorganizada
 -----------------------------------
