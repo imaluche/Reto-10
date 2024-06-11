@@ -115,3 +115,12 @@ if __name__ == "__main__":
 - Para despues reañadirlo con un .append, de esta forma aparecera al final de la lista
 - Finalizado el proceso se reimprimira la lista reorganizada
 -----------------------------------
+
+### 4. Revisar que son los algoritmos de sorting, entender bubble-sort (enlace a implementación).
+### explicacion:
+- En palabras simple un algoritmo de sorting nos permite organizar una lista/arreglo segun ciertas metricas
+- El bubble-sort es uno de estos, es la manera mas simple de organizar elementos de una lista en relacion con su valor numerico.
+- En este se comparan los valores en orden con sus adayacentes dentro del contexto de la lista, en caso de ser el primero mayor que el segundo estos intercambian de lugar en la indexacion mientras que si esto no sucede se mantendra en su lugar
+- Independientemente de lo que pase se evaluara el siguiente valor de index, repitiendo el proceso hasta que el primer valor mas grande llegue al final de la lista en terminos de index
+- Este proceso se repetira con el segundo valor mas grande, el tercero hasta llegar al n valor mas grande
+- Este metodo al ser tan simple es facil de entender y es estable, pero suele ser algo lento en comparacion con otros algoritmos y al basarse en comparaciones puede limitar la funcionalidad del algoritmos en ciertos casos
